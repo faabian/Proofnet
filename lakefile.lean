@@ -8,10 +8,8 @@ package «proofnet» where
   ]
   -- add any additional package configuration options here
 
-require mathlib from git
-  "https://github.com/leanprover-community/mathlib4.git"@"29dcec074de168ac2bf835a77ef68bbe069194c5"
+require mathlib from git "https://github.com/leanprover-community/mathlib4" @ "v4.19.0"
 
 @[default_target]
 lean_lib «Proofnet» where
   globs := #[.submodules `Proofnet]
-

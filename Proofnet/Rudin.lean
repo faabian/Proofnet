@@ -38,20 +38,20 @@ theorem exercise_1_8 : ¬ ∃ (r : ℂ → ℂ → Prop), IsLinearOrder ℂ r :=
   sorry
 
 theorem exercise_1_11a (z : ℂ) :
-  ∃ (r : ℝ) (w : ℂ), abs w = 1 ∧ z = r * w :=
+  ∃ (r : ℝ) (w : ℂ), Complex.abs w = 1 ∧ z = r * w :=
 sorry
 
 theorem exercise_1_12 (n : ℕ) (f : ℕ → ℂ) :
-  abs (∑ i in range n, f i) ≤ ∑ i in range n, abs (f i) :=
+  Complex.abs (∑ i in range n, f i) ≤ ∑ i in range n, Complex.abs (f i) :=
 sorry
 
 theorem exercise_1_13 (x y : ℂ) :
-  |(abs x) - (abs y)| ≤ abs (x - y) :=
+  |(Complex.abs x) - (Complex.abs y)| ≤ Complex.abs (x - y) :=
 sorry
 
 theorem exercise_1_14
-  (z : ℂ) (h : abs z = 1)
-  : (abs (1 + z)) ^ 2 + (abs (1 - z)) ^ 2 = 4 :=
+  (z : ℂ) (h : Complex.abs z = 1)
+  : (Complex.abs (1 + z)) ^ 2 + (Complex.abs (1 - z)) ^ 2 = 4 :=
 sorry
 
 theorem exercise_1_16a
